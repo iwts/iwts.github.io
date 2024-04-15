@@ -2,4 +2,5 @@
 
 source "https://www.rubygems.org"
 
-gem "jekyll"
+# gem "jekyll"
+gem "github-pages", "~> 231", group: :jekyll_plugins
