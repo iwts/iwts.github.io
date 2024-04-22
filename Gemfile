@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-source "https://www.rubygems.org"
+source "https://rubygems.org"
 
 # gem "jekyll"
 gem "github-pages", "~> 231", group: :jekyll_plugins
