@@ -1,4 +1,4 @@
 # theme: owner/name --> Don't forget to remove/comment the gem-based theme option
 remote_theme: "jeffreytse/jekyll-theme-yat"
 
-github: [metadata]
+repository: iwts/iwts.github.io
