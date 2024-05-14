@@ -2,4 +2,4 @@
 
 # chmod +x run.sh
 
-jekyll serve
+jekyll serve -w

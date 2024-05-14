@@ -140,8 +140,8 @@ header_pages:
   - index.html
   - archives.html
   - categories.html
-  - tags.html
-  - about.md
+  # - tags.html
+  - about.html
 
 # Banner default settings
 # These banner settings are for global banner default, but you can also
@@ -216,6 +216,7 @@ paginate: 10
 
 # Build settings
 # highlighter: none
+
 markdown: kramdown
 kramdown:
   input: GFM
