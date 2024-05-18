@@ -1,5 +1,5 @@
 {% comment %}
-    @param {string} type - 'page' | 'post' | 'keynote'
+    @param {string} type - 'page' | 'post' | 'keynote' | 'index'
     @param {boolean} short
 {% endcomment %}
 
@@ -17,6 +17,28 @@
         height: 100%;
         position: absolute;
         background: rgba(0,0,0, {{ page.header-mask }});
+    }
+    {% endif %}
+</style>
+{% elsif include.type == 'index' %}
+<style type="text/css">
+    header.intro-header{
+        position: relative;
+        background-image: url('{{ site.baseurl }}/{{ site.index.header-img }}');
+        background-size: cover;
+        {% if site.index.overlay %}
+        background-color: rgba(255, 255, 255, {{site.index.overlay}});
+        background-blend-mode: overlay;
+        {% endif %}
+        background: {{ page.header-bg-css }};
+    }
+
+    {% if site.index.header-mask %}
+    header.intro-header .header-mask{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background: rgba(0,0,0, {{ site.index.header-mask }});
     }
     {% endif %}
 </style>
@@ -111,4 +133,22 @@
     </div>
   </div>
 </header>
+{% elsif include.type == 'index' %}
+<header class="intro-header" style="background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')">
+    <div class="header-mask"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+          {% if include.short %}
+          <div class="site-heading" id="tag-heading">
+          {% else %}
+          <div class="site-heading">
+          {% endif %}
+            <h1>{% if page.title %}{{ page.title }}{% else %}{{ site.index.title }}{% endif %}</h1>
+            <span class="subheading" style="font-weight: 400;font-size: 28px;">{% if page.description %}{{ page.description }}{% else %}{{ site.index.description }}{% endif %}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
 {% endif %}

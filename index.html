@@ -1,5 +1,6 @@
 ---
-layout: page
+layout: index
+title: iwts's blog
 description: "深圳搬砖两年半, 吃遍南山猪脚饭🤣👉🤡"
 ---
 
@@ -15,15 +16,19 @@ description: "深圳搬砖两年半, 吃遍南山猪脚饭🤣👉🤡"
         </h3>
         {% endif %}
         <div class="post-content-preview">
-            {% if post.lang == 'en' %}
-                {{ post.content | strip_html | truncate:300 }}
+            {% if post.preview_content_lenght != 0 %}
+                {{ post.preview_content | strip_html | truncate:300 }}
             {% else %}
-                {{ post.content | strip_html | truncate:200 }}
+                {% if post.lang == 'en' %}
+                    {{ post.content | strip_html | truncate:300 }}
+                {% else %}
+                    {{ post.content | strip_html | truncate:200 }}
+                {% endif %}
             {% endif %}
         </div>
     </a>
     <p class="post-meta">
-        Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}
+        作者: {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %}. 发布日期: {{ post.date | date: "%Y-%m-%d" }}
     </p>
 </div>
 <hr>

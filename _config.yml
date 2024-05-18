@@ -20,6 +20,12 @@ url: "https://iwts.github.io/"
 baseurl: "" # for example, '/blog' if your blog hosted on 'host/blog'
 timezone: Asia/Shanghai
 
+index:
+  header-img: img/banner.jpg # 设定主页header背景
+  overlay: 0.1 # 设定透明度，不设置值默认无透明程度
+  # title: "" # 设定首页title，也可以在page头文件设置
+  # description: "" # 设定首页副标题，也可以在page头文件设置
+
 repository: iwts/iwts.github.io
 lang: zh-CN
 
@@ -76,9 +82,12 @@ netease_comment: false
 # ga_track_id: "UA-49627206-1" # Format: UA-xxxxxx-xx
 # ga_domain: huangxuan.me
 
-# Sidebar settings
+# 侧边栏about me展示内容
 sidebar: true # whether or not using Sidebar.
-sidebar-about-description: "深圳搬砖两年半, 吃遍南山猪脚饭🤣👉🤡"
+sidebar-about-name: "iwts li"
+sidebar-about-description: "Backend Development Engineer"
+sidebar-about-company: "Shopee"
+sidebar-about-location: "深圳"
 sidebar-avatar: img/nerv.svg # use absolute URL, seeing it's used in both `/` and `/about/`
 
 # Featured Tags
