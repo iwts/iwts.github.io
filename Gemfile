@@ -3,8 +3,8 @@
 source "https://rubygems.org"
 
 # gem "jekyll"
+gem "jekyll", "~> 4.0"
 gem 'jekyll-paginate'
-# gem "jekyll", "~> 4.0"
 gem "rake"
 
 gem "github-pages", "~> 231", group: :jekyll_plugins
