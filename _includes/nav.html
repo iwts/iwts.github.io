@@ -5,7 +5,7 @@
     <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
         {% endif %}
         <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
+            <!-- 左上角主页 -->
             <div class="navbar-header page-scroll">
                 <button type="button" class="navbar-toggle">
                     <span class="sr-only">Toggle navigation</span>
@@ -13,20 +13,17 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="{{ site.baseurl }}/">{{ site.title }}</a>
+                <a class="navbar-brand" href="{{ site.baseurl }}/">HOME</a>
             </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
+            <!-- 右上角一排按钮 -->
             <div id="huxblog_navbar">
                 <div class="navbar-collapse">
                     <ul class="nav navbar-nav navbar-right">
-                        <li>
-                            <a href="{{ site.baseurl }}/">Home</a>
-                        </li>
                         {% for page in site.pages %}
-                        {% if page.title and page.hide-in-nav != true %}
+                        {% if page.nav-title and page.hide-in-nav != true %}
                         <li>
-                            <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+                            <a href="{{ page.url | prepend: site.baseurl }}">{{ page.nav-title }}</a>
                         </li>
                         {% endif %}
                         {% endfor %}
