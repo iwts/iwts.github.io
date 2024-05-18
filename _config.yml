@@ -18,7 +18,7 @@ description: "深圳搬砖两年半, 吃遍南山猪脚饭🤣👉🤡"
 keyword: "iwts, iwts li, iwts的博客, Iwts's blog, 博客, 个人网站, 互联网, Web, Java, Golang, 后端, 设计"
 url: "https://iwts.github.io/"
 baseurl: "" # for example, '/blog' if your blog hosted on 'host/blog'
-timezone: Asia/Shanghai
+timezone: "+800"
 
 index:
   header-img: img/banner.jpg # 设定主页header背景
