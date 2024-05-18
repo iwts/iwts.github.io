@@ -1,4 +1,13 @@
-exclude: ["*/site_template/",vendor]
+exclude:
+  [
+    "less",
+    "node_modules",
+    "Gruntfile.js",
+    "package.json",
+    "README.md",
+    "README.zh.md",
+    "vendor"
+  ]
 
 # Site settings
 title: Iwts's blog
@@ -31,15 +40,6 @@ github_username: iwts
 highlighter: rouge
 permalink: pretty
 paginate: 10
-exclude:
-  [
-    "less",
-    "node_modules",
-    "Gruntfile.js",
-    "package.json",
-    "README.md",
-    "README.zh.md",
-  ]
 anchorjs: true # if you want to customize anchor. check out line:181 of `post.html`
 
 # Gems
