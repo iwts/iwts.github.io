@@ -1,3 +1,5 @@
+exclude: [vendor]
+
 # Site settings
 title: Iwts's blog
 SEOTitle: Iwts's blog | iwts | iwts li
