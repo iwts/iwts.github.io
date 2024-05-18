@@ -17,10 +17,8 @@ https://github.com/kitian616/jekyll-TeXt-theme
 <div class="container">
 	<div class="row">
 		<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-			<!-- 删掉tags过滤相关逻辑，不想在这个页面放这个 -->
-
 			<!-- Tags (as filter) -->
-			<!-- <div id='tag_cloud' class="tags tags-sup js-tags">
+			<div id='tag_cloud' class="tags tags-sup js-tags">
 				<a class="tag-button--all" data-encode="">
 					Show All
 					<sup>{{site.posts.size}}</sup>
@@ -37,25 +35,24 @@ https://github.com/kitian616/jekyll-TeXt-theme
 				{% endfor %}
 				{% endcapture %}
 				{{ tags | split:'__SEPERATOR__' | sort }}
-			</div> -->
+			</div>
 
 			<!-- Article List -->
-			<div class="mini-post-list js-result d-none">
-				<p>长度：{{site.posts-length}}</p>
+			<div class="mini-post-list js-result">
 				{%- assign _sorted_list = site.posts -%}
 				{%- assign _sorted_list = _sorted_list | sort: 'date' -%}
 				{%- assign _sorted_list = _sorted_list | reverse -%}
 
 				{%- for _article in _sorted_list -%}
 				{%- assign _tags = '' -%}
-				<!-- {%- for _tag in _article.tags -%}
+				{%- for _tag in _article.tags -%}
 				{%- assign _tag_encode = _tag | strip | url_encode -%}
 				{%- if forloop.last -%}
 				{%- assign _tags = _tags | append: _tag_encode -%}
 				{%- else -%}
 				{%- assign _tags = _tags | append: _tag_encode | append: ',' -%}
 				{%- endif -%}
-				{%- endfor -%} -->
+				{%- endfor -%}
 
 				{% comment %} group by year {% endcomment %}
 				{%- assign _currentdate = _article.date | date: '%Y' -%}
