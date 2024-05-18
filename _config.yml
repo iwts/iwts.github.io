@@ -1,4 +1,4 @@
-exclude: [vendor]
+exclude: ["*/site_template/",vendor]
 
 # Site settings
 title: Iwts's blog
