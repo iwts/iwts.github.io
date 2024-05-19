@@ -33,7 +33,7 @@ lang: zh-CN
 future: true
 
 # SNS settings
-RSS: false
+RSS: true
 # weibo_username: 
 # zhihu_username: 
 github_username: iwts
