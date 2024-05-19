@@ -20,12 +20,14 @@
             <div id="huxblog_navbar">
                 <div class="navbar-collapse">
                     <ul class="nav navbar-nav navbar-right">
-                        {% for page in site.pages %}
-                        {% if page.nav-title and page.hide-in-nav != true %}
-                        <li>
-                            <a href="{{ page.url | prepend: site.baseurl }}">{{ page.nav-title }}</a>
-                        </li>
-                        {% endif %}
+                        <!-- 支持page设置priority保证加载顺序 -->
+                        {% assign sorted_pages = site.pages | sort: 'priority' %}
+                        {% for page in sorted_pages %}
+                            {% if page.nav-title and page.hide-in-nav != true %}
+                                <li>
+                                    <a href="{{ page.url | prepend: site.baseurl }}">{{ page.nav-title }}</a>
+                                </li>
+                            {% endif %}
                         {% endfor %}
                         <li class="search-icon">
                             <a href="javascript:void(0)">
