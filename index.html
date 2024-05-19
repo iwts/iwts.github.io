@@ -17,8 +17,8 @@ hide-in-nav: true
         </h3>
         {% endif %}
         <div class="post-content-preview">
-            {% if post.preview_content_lenght != 0 %}
-                {{ post.preview_content | strip_html | truncate:300 }}
+            {% if post.description_lenght != 0 %}
+                {{ post.description | strip_html | truncate:300 }}
             {% else %}
                 {% if post.lang == 'en' %}
                     {{ post.content | strip_html | truncate:300 }}

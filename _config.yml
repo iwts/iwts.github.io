@@ -11,7 +11,7 @@ exclude:
 
 # Site settings
 title: Iwts's blog
-SEOTitle: Iwts's blog | iwts | iwts li
+SEOTitle: Iwts's blog
 header-img: img/banner.jpg
 email: iwtslee@qq.com
 description: "深圳搬砖两年半, 吃遍南山猪脚饭🤣👉🤡"
@@ -44,7 +44,7 @@ github_username: iwts
 # Build settings
 # from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
 highlighter: rouge
-permalink: pretty
+permalink: /blog/:title
 paginate: 10
 anchorjs: true # if you want to customize anchor. check out line:181 of `post.html`
 

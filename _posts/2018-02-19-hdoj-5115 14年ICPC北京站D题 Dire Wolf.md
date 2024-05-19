@@ -9,7 +9,7 @@ tags:
   - ACM
   - 动态规划
   - 区间DP
-preview_content: "题解"
+description: "hdoj-5115 | 14年ICPC北京站D题 Dire Wolf 题解"
 ---
 
 # 题目链接  
