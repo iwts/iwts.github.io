@@ -1,0 +1,45 @@
+<style>
+  .vcard-detail .octicon {
+      float: left;
+      width: 16px;
+      margin-top: var(--base-size-4);
+      margin-left: calc(var(--base-size-24)* -1);
+      color: var(--fgColor-muted, var(--color-fg-muted));
+      text-align: center;
+  }
+  .octicon {
+      display: inline-block;
+      overflow: visible !important;
+      vertical-align: text-bottom;
+      fill: currentColor;
+  }
+
+  .statistics_container {
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: inherit;
+    width: 100%;
+  }
+  .statistics_container h5 {
+    flex-grow: 1;
+    align-items: center;
+    display: flex;
+    flex-basis: auto;
+    flex-shrink: 0;
+    justify-content: center;
+    margin: 0 !important;
+    text-align: center !important;
+    box-sizing: inherit;
+    padding-bottom: 0 !important;
+  }
+</style>
+
+<!-- 侧边栏展示的统计相关信息 -->
+<section class="visible-md visible-lg statistics_container">
+  <h5 style="justify-content: flex-start;"><span>文章: </span><a href="{{'/archive/' | prepend: site.baseurl }}">{{ site.posts.size }}</a></h5>
+  <span>|</span>
+  <h5><span>类目: </span><a href="{{'/categories/' | prepend: site.baseurl }}">{{ site.categories.size }}</a></h5>
+  <span>|</span>
+  <h5 style="justify-content: flex-end;"><span>TAGS: </span><a href="{{'/archive/' | prepend: site.baseurl }}">{{ site.tags.size }}</a></h5>
+</section>
