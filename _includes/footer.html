@@ -33,6 +33,9 @@
 <!-- Simple Jekyll Search -->
 <script src="{{ "/js/simple-jekyll-search.min.js" | prepend: site.baseurl }}"></script>
 
+<!-- Custom CSS -->
+<link rel="stylesheet" href="{{ " /css/iwts-blog.css" | prepend: site.baseurl }}">
+
 <!-- Service Worker -->
 {% if site.service-worker %}
 <script src="{{ "/js/snackbar.js " | prepend: site.baseurl }}"></script>
@@ -176,8 +179,15 @@
         // appending
         a.each(function () {
             n = $(this).prop('tagName').toLowerCase();
+
+            // 目录展示优化+缩进
+            let nav_title_prefix = "";
+            if (n != "h1") {
+                nav_title_prefix = "- ";
+            }
+
             i = "#" + $(this).prop('id');
-            t = $(this).text();
+            t = nav_title_prefix + $(this).text();
             c = $('<a href="' + i + '" rel="nofollow">' + t + '</a>');
             l = $('<li class="' + n + '_nav"></li>').append(c);
             $(selector).append(l);

@@ -1,0 +1,23 @@
+@import url('hux-blog.css');
+
+.h2_nav {
+    text-indent: 0.5em;
+}
+.h3_nav {
+    text-indent: 1em;
+}
+.h4_nav {
+    text-indent: 1.5em;
+}
+.h5_nav {
+    text-indent: 2em;
+}
+.h6_nav {
+    text-indent: 2.5em;
+}
+
+/* .catalog-body{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+} */
