@@ -6,6 +6,7 @@ date: 2018-02-19 15:45:36
 categories: 题解
 header-style: text
 tags:
+  - 题解
   - ACM
   - 动态规划
   - 区间DP

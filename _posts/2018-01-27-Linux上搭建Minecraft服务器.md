@@ -6,6 +6,7 @@ date: 2018-01-27 19:24:41
 categories: 运维
 header-style: text
 tags:
+  - 运维
   - linux
   - minecraft
 description: "如果想和小伙伴们一起联机玩MC，那么完全可以购买一个云服务器后自己创建一个属于自己的世界。实测3 4个人的情况下也不需要有多好的服务器。支持计算机小白，可以尝试着手动搭建一下。"
