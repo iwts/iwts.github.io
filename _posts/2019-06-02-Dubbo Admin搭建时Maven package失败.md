@@ -11,7 +11,6 @@ tags:
   - Node.js
 description: "Dubbo Admin 搭建中的Vue与npm相关前端部署问题"
 ---
-
 ​
 # Dubbo-Admin 的选择以及开源地址
 
