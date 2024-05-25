@@ -10,7 +10,7 @@ tags:
 description: "Java try-catch-finally 块执行顺序"
 ---
 
-最近看面试题，发现这个比较好玩，try-catch-finally块的执行顺序问题。
+最近看面试题，发现这个比较有意思，try-catch-finally块的执行顺序问题。
 
 一般认为，finally最后执行，做收尾工作，无论try块是否捕获异常，最后finally都会工作。
 
