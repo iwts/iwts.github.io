@@ -224,3 +224,4 @@ public class ViewController {
 
 # 下一章
 
+[Spring MVC+mybatis 项目入门:旅游网（三）用户注册](../Spring-MVC+mybatis-项目入门-旅游网-三-用户注册)
