@@ -11,6 +11,8 @@ Github：[iwts's Github](https://github.com/iwts/)
 
 个人Blog：[iwts's blog](https://iwts.github.io/)
 
-CSDN：[iwts's blog | CSDN](https://blog.csdn.net/iwts_24?type=blog)
+CSDN：[iwts's CSDN blog](https://blog.csdn.net/iwts_24?type=blog)
 
-Ins：[instagram | iwtslee](https://www.instagram.com/iwtslee/)
+---
+
+Ins：[instagram](https://www.instagram.com/iwtslee/)
