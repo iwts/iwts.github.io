@@ -3,8 +3,16 @@
 
 Shopee 打工仔
 
-之前搞Java，现在搞Golang，时刻准备下岗🤡
+之前搞Java，现在搞Golang。
 
-Github：[iwts](https://github.com/iwts/)
+想要联系我？请在下面评论区留言。
 
-Blog：[iwts](https://iwts.github.io/)
+Github：[iwts's Github](https://github.com/iwts/)
+
+个人Blog：[iwts's blog](https://iwts.github.io/)
+
+CSDN：[iwts's blog | CSDN](https://blog.csdn.net/iwts_24?type=blog)
+
+---
+
+Ins：[instagram | iwtslee](https://www.instagram.com/iwtslee/)
